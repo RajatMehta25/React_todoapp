@@ -1,0 +1,154 @@
+.container {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-items: center;
+  border-radius: 28px;
+  gap: 8px;
+}
+.heading{
+
+  text-align: center;
+  background-color: blueviolet;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  font-size: x-large;
+  border-radius: 28px;
+ 
+}
+.inp{
+  border-radius: 28px;
+ background-color: slateblue;
+  min-height: 40px;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: ease-in-out;
+  transition-delay: .20s;
+  transition-duration: .35s;
+  padding: 5px;
+  max-height: 30%;
+  text-indent: 30px;
+  border-color: slateblue;
+  
+}
+input:focus-visible {
+  outline-offset: 0px;
+  outline-style: none;
+  border-color: black;
+
+}
+input::placeholder{
+  color: white;
+}
+input[type=text]:focus{
+  border: none;
+  border-radius: 28px;
+  width: 90%;
+  background-color: black;
+
+}
+
+.btn{
+  margin-left: 25px;
+  border-radius: 100px;
+  width: 45px;
+  cursor: pointer;
+  min-height: 35px;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  background-color: blueviolet;
+  border-color: blueviolet;
+}
+.btn:hover{
+  background-color: greenyellow;
+  color: black;
+  
+}
+li{
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  margin-top: 10px;
+}
+li:nth-child(odd){
+  background-color: thistle;
+  border-radius: 30px;
+}
+li:nth-child(even){
+  background-color: rgb(231, 136, 250);
+  border-radius: 30px;
+}
+ol{
+  list-style-type: devanagari;
+  margin-left: 70px;
+}
+
+@media only screen and  (max-width:800px)   {
+ .container{
+   width: 100%;
+   margin: 0px 5px;
+ }
+  .mobile{
+    text-align: center;
+  }
+ .inp{
+   display: block;
+   width: 95%;
+  
+ }
+ .btn{
+   display: block;
+   margin-top: 15px ;
+   margin-left: 108px;
+   width: 70%;
+   font-size: x-large;
+ }
+ input[type=text]:focus{
+  
+  
+  width: 100%;
+  
+
+}
+@media only screen and (min-width:100px) and (max-width: 360px){
+  .btn {
+    margin-left:40px;
+  }
+.container{
+  margin: 0px 5px;
+}
+ol{
+  margin-left: 0px;
+}}
+  
+}
+@media only screen and  (min-width:361px) and (max-width:650px)  {
+  .btn{
+    margin-top: 15px;
+    margin-left: 60px;
+   
+  }
+  .container{
+    margin: 0px 5px;
+  }
+  ol{
+    margin-left: 15px;
+  }
+}
+@media only screen and  (min-width:651px) and (max-width:779px) {
+  ol{
+    margin-left: 15px;
+  }
+  .btn{
+    margin-left: 75px;
+  }
+  .container{
+    margin: 0px 5px;
+  }
+}
