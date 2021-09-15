@@ -26,8 +26,9 @@ else{
     <>
       <div className="container">
 <div className="heading">TO DO LIST</div>
-<div className="mobile"><input type="text" placeholder="ADD A TASK" className="inp" onChange={setitems} value={item}/><button className="btn" onClick={listofitems}>+</button></div>
-<div>
+<div className="inpmobile"><input type="text" placeholder="ADD A TASK" className="inp" onChange={setitems} value={item}/>
+<button className="btn" onClick={listofitems}>+</button></div>
+<div className="oldiv">
   <ol>
     
     {updateitem.map((itemval)=>{
