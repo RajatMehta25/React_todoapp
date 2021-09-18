@@ -1,7 +1,7 @@
 import './App.css';
 import react, { useState } from 'react';
 import reactDom from 'react-dom';
-
+import Todolist from './Todolist';
 function App() {
 
 const [item,setinput]=useState();
@@ -21,6 +21,13 @@ else{
   setinput("");
 }
 };
+const deleteitem=(id)=>{
+  arrayitems((olditems)=>{
+return olditems.filter((arrele,index)=>{
+return index !== id;
+});
+  });
+}
 
   return (
     <>
@@ -31,9 +38,11 @@ else{
 <div className="oldiv">
   <ol>
     
-    {updateitem.map((itemval)=>{
-      return <li>{itemval}</li>;
-    })}
+    {
+    updateitem.map((itemval,index)=>{
+     return <Todolist key={index} id={index} text={itemval} onSelect={deleteitem}/>
+  })
+  }
    
   </ol>
 </div>
